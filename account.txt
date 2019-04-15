@@ -1,0 +1,27 @@
+AZURE
+user22@2miles.onmicrosoft.com
+SKCNC123!@#
+
+client id 30977d54-6da7-4ba7-82d7-5396eba3146d
+tenant id 96e3cac9-1ab3-436b-9f79-2a0a4b687f1b
+object id c2062c32-a690-4a87-a2b2-bfe1d2ab360c
+client Secret = Acao0ylwp5t(}^fj&Cq+h^%I7(l;NV+{X&$3j=Ms__W|*SDV
+
+subscription id : e0fae348-f6c2-45f5-87b7-c41c22782d8f
+
+
+AMAZON
+
+715652651898
+user22
+asia pacific (mumbai)
+
+Access Key
+AKIA2NIBY3N5JUVDZEMI
+Secret
+wb5u4pRQDk4LRthj4lsIRnKa/2XAiG1rlqbgUaVy
+
+public 1a subnet 22..0.1.0
+private 1a subnet 22.0.101.0
+public 1c subnet 22.0.2.0
+private 1c subnet 22.0.102.0
