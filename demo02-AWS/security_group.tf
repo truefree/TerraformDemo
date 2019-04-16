@@ -18,7 +18,7 @@ resource "aws_default_security_group" "dev_default" {
     }
 
     tags{
-        Name="dev-defalut"
+        Name="user22-dev-defalut"
     }
   
 }

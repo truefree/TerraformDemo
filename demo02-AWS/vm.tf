@@ -12,15 +12,16 @@ resource "aws_security_group" "dev_vm_1a" {
     }
 
     tags{
-        Name="dev_vm_1a"
+        Name="user22-dev_vm_1a"
     }
   
 }
 
 resource "aws_instance" "dev_vm_1a" {
     ami="${var.amazon_linux}"
-    availability_zone="ap-south-1a"
+    availability_zone="ap-northeast-1a"
     instance_type="t2.nano"
+    key_name="${var.dev_keyname}"
 
     vpc_security_group_ids = [
         "${aws_security_group.dev_vm_1a.id}",
@@ -30,6 +31,6 @@ resource "aws_instance" "dev_vm_1a" {
     subnet_id="${aws_subnet.private_1a.id}"
 
     tags{
-        Name="dev_vm_1a"
+        Name="user22-dev_vm_1a"
     }
 }

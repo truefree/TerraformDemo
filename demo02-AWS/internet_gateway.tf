@@ -1,7 +1,7 @@
-resource "aws_internet_gateway" "dev" {
+resource "aws_internet_gateway" "dev-default" {
   vpc_id = "${aws_vpc.dev.id}"
 
   tags {
-      Name="user22DeV"
+      Name="user22-IG"
   }
 }

@@ -19,7 +19,7 @@ resource "aws_security_group" "bastion" {
     }
 
     tags{
-        Name="bastion"
+        Name="user22-bastion"
     }
 }
 
@@ -30,9 +30,11 @@ resource "aws_eip" "bastion_1a" {
 
 resource "aws_instance" "bastion_1a" {
     ami="${var.amazon_linux}"
-    availability_zone="ap-south-1a"
+    availability_zone="ap-northeast-1a"
     instance_type="t2.nano"
     key_name="${var.dev_keyname}"
+    # aws_key_pair를 authorizedKeys에 추가
+    # SSH tunneling을 위해 2nd VM에 id_rsa / id_rsa.pub 복사 필요
 
     vpc_security_group_ids = [
         "${aws_security_group.bastion.id}",
@@ -42,7 +44,7 @@ resource "aws_instance" "bastion_1a" {
     subnet_id="${aws_subnet.public_1a.id}"
     associate_public_ip_address = true
     tags{
-        Name="bastion-1a"
+        Name="user22-bastion-1a"
     }
 }
 
